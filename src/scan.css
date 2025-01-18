@@ -1,0 +1,348 @@
+/* General Container */
+.scan-container {
+    background-color: #0F0C4C;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding-top: 90px;
+    padding-left: 190px;
+    
+  }
+  
+  .scan-top {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .scan-top {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  
+  .scan-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    
+  }
+  
+  .scan-icons img {
+    width: 32px;
+    height: 32px;
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .scan-links {
+    margin: 1rem 0;
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 1rem; /* Adds spacing between items */
+    text-decoration: underline;
+    
+    
+  }
+  
+  .scan-link {
+    margin: 0; /* Removes default margin from h6 */
+    cursor: pointer; /* Optional: Adds a pointer cursor to make it look clickable */
+  }
+  
+  .scan-icons {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    margin-top: 49px;
+    margin-bottom: 16px;
+    gap: 20px;
+  }
+  
+  .scan-icons img {
+    width: 32px;
+    height: 32px;
+    margin-right: 0.5rem;
+  }
+  
+  .scan-copyright,
+  .scan-designed,
+  .scan-disclaimer {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+  
+  /* Middle Section */
+  .scan-middle {
+    text-align: left;
+  }
+  
+  .scan-nav-item {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    color: #FFD700;
+  }
+  
+  .scan-nav-item:hover {
+    color: #c3b044;
+  }
+  
+  /* Right Section */
+  .scan-right {
+    background-color: #FFD700;
+    padding: 1.5rem;
+    border-radius: 20px;
+    position: relative; /* Creates a positioning context for the text */
+    display: inline-block;
+   margin-right: 40px;
+   height: 232.39px;
+    width: 436px;
+  }
+  .scan-newsletter-heading,
+.scan-newsletter-text,
+.scan-newsletter-form {
+  position: relative; /* Keeps these elements on top of the background */
+  z-index: 1; /* Ensures they stay above the background image */
+}
+
+  .scan-newsletter-img {
+    width: 189.26px;
+    height: 220.52px;
+    margin-left: 98px;
+    position: absolute;
+    margin-top: -19px;
+  }
+  
+  .scan-newsletter-heading {
+    color: #0F0C4C;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .scan-newsletter-text {
+    color: #0F0C4C;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+  }
+  
+  .scan-newsletter-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .scan-input {
+    border: 1px solid #ccc;
+    border-right: none;
+    padding: 10px;
+    padding-left: 100px;
+    font-size: 14px;
+    border-radius: 20px 0 0 20px; /* Rounded corners for the left side */
+  }
+  
+  .scan-button {
+    background-color: #0F0C4C; /* Change this to your preferred color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0; /* Rounded corners for the right side */
+  }
+  
+  .scan-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+  
+  
+  .scan-designed{
+    margin-bottom: 140px;
+  }
+  .scan-heading1{
+    margin-bottom: 60px;
+    text-decoration: underline;
+    font-size: 2rem;
+    font-weight: bold;
+    text-underline-offset: 20px;
+  }
+  .scan-disclaimer{
+    margin-bottom: 40px;
+  }
+  /* Medium Screens (Tablets) */
+@media (max-width: 1023px) {
+  .scan-container {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .scan-top {
+    flex-direction: column;
+    gap: 1.5rem; /* Adjust gap for medium screens */
+  }
+
+  .scan-right {
+    width: 90%; /* Adjust width for medium screens */
+    margin-right: auto; /* Center horizontally */
+    margin-left: auto; /* Center horizontally */
+    height: auto; /* Allow height to adjust */
+    padding: 1rem;
+  }
+
+  .scan-newsletter-img {
+    width: 150px; /* Adjust size */
+    height: auto;
+    margin-left: 300px;
+    margin-top: 0.2px;
+    
+  }
+  
+  .scan-newsletter-heading {
+    text-align: center;
+  }
+
+  .scan-newsletter-text {
+    text-align: center;
+  }
+  .scan-newsletter-form{
+    margin-left: 200px;
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (min-width: 600px) and (max-width: 770px) {
+  .scan-container {
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-right: 20px;
+  }
+
+
+  .scan-heading {
+    font-size: 1.5rem; /* Smaller heading size */
+  }
+
+  .scan-links {
+    flex-direction: column; /* Stack links */
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .scan-right {
+    width: 100%; /* Full width */
+    margin: 0;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .scan-newsletter-img {
+    width: 120px; /* Smaller size for mobile */
+   margin-left: 120px;
+   margin-top: 10px;
+   margin-left: 250px;
+  }
+
+  .scan-newsletter-heading {
+    font-size: 1.2rem; /* Adjust heading size */
+  }
+
+  .scan-newsletter-text {
+    font-size: 0.8rem; /* Smaller text size */
+  }
+
+  .scan-input {
+    padding-left: 20px; /* Adjust padding for smaller width */
+    font-size: 12px;
+    width: 70%; /* Input takes most of the width */
+    padding-right: 200px;
+    
+  }
+
+  .scan-button {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .scan-icons img {
+    width: 24px; /* Smaller icons */
+    height: 24px;
+   
+  }
+
+  .scan-nav-item {
+    font-size: 1rem; /* Smaller nav items */
+  }
+  .scan-newsletter-form{
+    margin-right: 400px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .scan-container {
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-right: 20px;
+  }
+
+
+  .scan-heading {
+    font-size: 1.5rem; /* Smaller heading size */
+  }
+
+  .scan-links {
+    flex-direction: column; /* Stack links */
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .scan-right {
+    width: 100%; /* Full width */
+    margin: 0;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .scan-newsletter-img {
+    width: 120px; /* Smaller size for mobile */
+ 
+   margin-top: 10px;
+  margin-left: 100px;
+  }
+
+  .scan-newsletter-heading {
+    font-size: 1.2rem; /* Adjust heading size */
+  }
+
+  .scan-newsletter-text {
+    font-size: 0.8rem; /* Smaller text size */
+  }
+
+  .scan-input {
+    padding-left: 20px; /* Adjust padding for smaller width */
+    font-size: 12px;
+    width: 70%; /* Input takes most of the width */
+    padding-right: 200px;
+  
+    
+  }
+
+  .scan-button {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .scan-icons img {
+    width: 24px; /* Smaller icons */
+    height: 24px;
+   
+  }
+
+  .scan-nav-item {
+    font-size: 1rem; /* Smaller nav items */
+  }
+  .scan-newsletter-form{
+    margin-left: -10px;
+  }
+}

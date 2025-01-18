@@ -1,0 +1,73 @@
+/* Container for the two cards */
+.read-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px; /* Tailwind's gap-8 equivalent */
+    padding: 50px; /* Tailwind's p-8 equivalent */
+  }
+  
+  /* Left card styling */
+  .read-card-left {
+    background: #facc15; /* Tailwind's bg-gradient-to-r from-yellow-400 to-orange-400 */
+    color: black;
+    border-radius: 8px; /* Tailwind's rounded-lg */
+    padding: 24px; /* Tailwind's p-6 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-lg */
+    max-width: 384px; /* Tailwind's max-w-sm */
+  }
+  
+  /* Right card styling */
+  .read-card-right {
+    text-align: left;
+    max-width: 384px; /* Tailwind's max-w-sm */
+  }
+  
+  /* Button styles */
+  .read-button-primary {
+    background-color: #2563eb; /* Tailwind's bg-blue-600 */
+    color: white;
+    padding: 8px 16px; /* Tailwind's px-4 py-2 */
+    border-radius: 20px; /* Tailwind's rounded-md */
+    font-size: 14px; /* Tailwind's text-sm */
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .read-button-primary:hover {
+    background-color: #1e40af; /* Tailwind's hover:bg-blue-700 */
+  }
+  
+  .read-button-secondary {
+    border: 2px solid black; /* Tailwind's border border-blue-600 */
+    color: black; /* Tailwind's text-blue-600 */
+    padding: 8px 16px; /* Tailwind's px-4 py-2 */
+    border-radius: 20px; /* Tailwind's rounded-md */
+    font-size: 14px; /* Tailwind's text-sm */
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .read-button-secondary:hover {
+    background-color: #eceef1; /* Tailwind's hover:bg-blue-600 */
+    color: black; /* Tailwind's hover:text-white */
+  }
+  
+  /* Headings */
+  .read-heading-left {
+    font-size: 24px; /* Tailwind's text-2xl */
+    font-weight: 600; /* Tailwind's font-semibold */
+    margin-bottom: 8px; /* Tailwind's mb-2 */
+  }
+  
+  .read-heading-right {
+    font-size: 20px; /* Tailwind's text-xl */
+    font-weight: 600; /* Tailwind's font-semibold */
+    margin-bottom: 8px; /* Tailwind's mb-2 */
+  }
+  
+  /* Paragraphs */
+  .read-paragraph {
+    font-size: 14px; /* Tailwind's text-sm */
+    color: #101011; /* Tailwind's text-gray-600 */
+    margin-bottom: 16px; /* Tailwind's mb-4 */
+  }
+  

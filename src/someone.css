@@ -1,0 +1,58 @@
+.someone-container {
+    background-color: #2563eb; /* Blue background */
+    padding: 48px 16px; /* Padding for top/bottom and left/right */
+    text-align: center;
+    color: white;
+  }
+  
+  .someone-content {
+    max-width: 512px; /* Maximum width of the container */
+    margin: 0 auto;
+  }
+  
+  .someone-title {
+    font-size: 30px; /* Title size */
+    font-weight: 500; /* Bold text */
+    margin-bottom: 50px;
+    
+  }
+  
+  .someone-subtitle {
+    font-size: 16px; /* Subtitle size */
+    margin-bottom: 50px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .button {
+    padding: 8px 24px;
+    border-radius: 6px; /* Rounded corners */
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-iphone {
+    background-color: #fbbf24; /* Yellow background */
+    color: black;
+    border-radius: 20px;
+  }
+  
+  .button-iphone:hover {
+    background-color: #f59e0b; /* Darker yellow on hover */
+  }
+  
+  .button-android {
+   border: solid 2px white;
+    color: white; /* Blue text */
+    border-radius: 20px;
+  }
+  
+  .button-android:hover {
+    background-color: #97add9; /* Light gray on hover */
+  }
+  

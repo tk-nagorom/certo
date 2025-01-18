@@ -1,0 +1,138 @@
+/* General container and layout styling */
+.latest-container {
+  background-color: #f4f8ff; /* Light blue background for contrast */
+  padding: 40px 20px; /* Adds spacing around the content */
+  text-align: center; /* Centers text within the container */
+  
+
+}
+
+/* Grid layout for cards */
+.latest-grid {
+  display: grid; /* Enables grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Dynamic columns */
+  justify-content: center; /* Centers the grid items */
+  gap: 30px; /* Space between cards */
+  width: 100%; /* Full width of the container */
+  max-width: 1200px; /* Limits grid width */
+  margin: auto; /* Centers the grid */
+}
+
+/* Card styling */
+.latest-card {
+  background-color: #ffffff; /* White card background */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  text-align: left; /* Aligns text inside the card */
+  position: relative; /* For button positioning */
+   /* Adds spacing inside the card */
+  height: 534px;
+  width: 320px;
+gap: 20px;
+  
+}
+
+/* Card image styling */
+.card-image {
+  width: 100%; /* Full width of the card */
+  height: auto; /* Maintains image aspect ratio */
+  border-radius: 20px 20px 0 0; /* Rounds the top corners of the image */
+}
+
+/* Card title styling */
+.card-title {
+  font-size: 24px; /* Slightly larger font size */
+  font-weight: bold; /* Bold title */
+  color: #333333; /* Dark text for readability */
+ margin-top: 45px;
+ margin-bottom: 25px;
+ padding-left: 20px;
+  line-height: 1.4; /* Line height for spacing */
+}
+
+/* Card text styling */
+.card-text {
+  font-size: 0.875rem; /* Slightly smaller text */
+  color: #000000; /* Black text */
+  line-height: 1.5; /* Comfortable line spacing */
+  margin: 0 20px; /* Spacing on both sides */
+font-size: 16px;
+}
+
+/* Buttons inside cards */
+.card-button.expertise,
+.card-button.guides {
+  background-color: white; /* White button background */
+  color: black; /* Black text */
+  font-size: 0.875rem; /* Smaller font size */
+  font-weight: bold; /* Bold text */
+  position: absolute; /* Allows positioning relative to the card */
+  margin-top: 20px; /* Space from the top */
+  margin-left: 10px; /* Space from the left */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 20px;
+}
+
+/* View All button */
+.view-all-button {
+  background-color: #ffc107; /* Bright yellow background */
+  color: black; /* White text for contrast */
+  font-size: 1rem; /* Standard font size */
+  font-weight: bold; /* Bold text */
+  padding: 15px 20px; /* Padding inside the button */
+  border: none; /* No border */
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+font-size: 19px;
+  margin-bottom: 50px;
+  margin-top: 130px;
+}
+
+.view-all-button:hover {
+  background-color: #e0a800; /* Darker yellow on hover */
+}
+
+/* Responsive Design */
+
+/* Large Tablets (Up to 1024px) */
+@media (max-width: 1024px) {
+  .latest-grid {
+      gap: 40px; /* Slightly larger gap */
+  }
+}
+
+/* Small Tablets and Mobiles (Up to 839px) */
+@media (max-width: 839px) {
+  .latest-grid {
+      grid-template-columns: 1fr; /* Single-column layout */
+      gap: 20px; /* Reduces gap for smaller screens */
+  }
+
+  .latest-card {
+      width: auto; /* Cards take up full width */
+      margin: 0 auto; /* Center the cards */
+  }
+
+  .card-image {
+      width: 100%; /* Image scales to card width */
+      height: auto; /* Maintains aspect ratio */
+  }
+}
+
+/* Extra-Small Screens (Below 768px) */
+@media (max-width: 768px) {
+  .latest-grid {
+      gap: 15px; /* Compact gap for very small screens */
+  }
+}
+
+.latest-title{
+  font-size: 56px;
+  margin-top: 84px;
+  margin-bottom: 74px;
+  font-weight: bold;
+}

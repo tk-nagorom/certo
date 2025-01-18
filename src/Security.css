@@ -1,0 +1,147 @@
+/* Overall container */
+.security-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: white;
+  }
+  
+  @media (min-width: 1024px) {
+    .security-container {
+      flex-direction: row;
+    }
+  }
+  
+  .text-section {
+    flex: 1;
+    padding-left: 200px; /* Applied for larger screens */
+    margin-left: 190px;
+  }
+  
+  @media (min-width: 320px){
+    .text-section {
+      padding-left: 0; /* Remove padding-left for smaller screens */
+      align-items: center;
+      margin-left: 5px
+    }
+   .button {
+    margin-left: 50px;
+   }
+  }
+  
+  .heading {
+    font-size: 36px; /* 30px */
+    font-weight: bold;
+    color: #1f2937; /* Gray-800 */
+    line-height: 40px;
+    margin-bottom: 43px;
+margin-top: 83px;
+}
+  
+  @media (min-width: 1024px) {
+    .heading {
+      font-size: 2.25rem; /* 36px */
+    }
+  }
+  
+  .description {
+    font-size: 20px; /* 18px */
+    color: #4b5563; /* Gray-600 */
+    margin-top: 16px;
+    line-height: 1.75;
+  }
+  
+  /* Buttons */
+  .button-container {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .button-container {
+      flex-direction: row;
+      gap: 24px;
+    }
+  }
+  
+  .button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .button.iphone {
+    background-color: #facc15; /* Yellow-500 */
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+  }
+  
+  .button.iphone:hover {
+    background-color: #eab308; /* Yellow-600 */
+  }
+  
+  .button.android {
+    background-color: white; /* Gray-200 */
+    color: #1f2937; /* Gray-800 */
+    border-radius: 20px;
+    border: solid 2px #1f2937;
+  }
+  
+  .button.android:hover {
+    background-color: #d1d5db; /* Gray-300 */
+  }
+  
+  /* Image Section */
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 93px;
+  }
+  
+  .image-section {
+    position: relative; /* Establish a positioning context */
+    display: inline-block; /* Adjust to suit layout needs */
+  }
+  
+  .square {
+    position: absolute;
+    width: 480px; /* Set desired width */
+    height: 480px; /* Set desired height */
+    background-color: #facc15; /* Change to desired color */
+    top: 230px; /* Adjust to position the rectangle */
+    left: 248px; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the square */
+    z-index: 1; /* Place it behind the image */
+  }
+  
+  .imagesecurity {
+    position: relative;
+    z-index: 2; /* Ensure the image is above the square */
+    width: 468px;
+    height: 468px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  @media (max-width: 550px) {
+    .square {
+      width: 100%;
+      margin-left: -100px;
+    }
+    .imagesecurity{
+      margin-left: -10px;
+    }
+  }
+  
