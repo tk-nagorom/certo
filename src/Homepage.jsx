@@ -1,6 +1,6 @@
 import React from 'react';
-import android from './Certoimage/android.png';
-import home from './Certoimage/home.png';
+
+import Group from './Certoimage/Group.png';
 
 const Homepage = () => {
   return (
@@ -28,21 +28,22 @@ const Homepage = () => {
       {/* Right Side: Images */}
       <div className="flex-1 relative mt-10 lg:mt-0 flex justify-center hidden lg:block sm:mb-[0px]">
         {/* Background Shape */}
-        <div className="absolute bg-indigo-700 sm:w-[50px] sm:h-[300px] md:w-[50px] md:h-[300px] lg:w-[720px] lg:h-[750px] lg:left-[81px] sm:mt-[60px]"></div>
+        <div
+  className="absolute bg-indigo-700 
+    sm:w-[50px] sm:h-[300px] 
+      md:w-[40px] md:h-[75px] 
+    lg:w-[400px] lg:h-[750px] 
+    lg:left-[81px] sm:mt-[60px] xl:w-[640px] "
+></div>
 
         {/* Home Screen Image */}
         <img
-          src={home}
+          src={Group}
           alt="Home Screen"
           className="relative w-32 sm:w-48 md:w-60 lg:w-[600px] xl:w-[700px] ml-[20px] sm:ml-[60px] md:ml-[90px] lg:ml-[110px] lg:h-[720px] mt-[30px] sm:mt-[60px] md:mt-[90px]"
         />
 
-        {/* Android App Image */}
-        <img
-          src={android}
-          alt="Android App"
-          className="absolute top-14 right-4 sm:top-20 sm:right-8 md:top-24 md:right-12 lg:top-[100px] lg:right-[280px] w-20 sm:w-28 md:w-36 lg:w-[250px] xl:w-[300px]"
-        />
+       
       </div>
     </div>
   );

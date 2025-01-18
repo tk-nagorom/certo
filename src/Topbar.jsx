@@ -1,51 +1,58 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import logocerto from './Certoimage/logocerto.svg';
 import './Topbar.css';
 import MenuIcon from '@mui/icons-material/Menu';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const Topbar = () => {
-  const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null); // Reference for the menu container
+  const menuIconRef = useRef(null); // Reference for the menu icon
 
-  const toggleDropdown = () => {
-    setDropdownVisible(!dropdownVisible);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
+
+  // Close the menu if clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        menuRef.current && !menuRef.current.contains(event.target) && 
+        menuIconRef.current && !menuIconRef.current.contains(event.target)
+      ) {
+        setMenuOpen(false);
+      }
+    };
+
+    // Attach event listener to document
+    document.addEventListener('click', handleClickOutside);
+
+    // Cleanup the event listener
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
-      {/* Navbar for large screens */}
-      <div className="topbar large-screen">
+      {/* Navbar */}
+      <div className="topbar">
         <div className="topbar-logo">
           <img src={logocerto} alt="Company Logo" />
         </div>
-        <div className="topbar-links">
+        {/* Links for large screens */}
+        <div className={`topbar-links ${menuOpen ? 'open' : ''}`} ref={menuRef}>
           <a href="#" aria-label="iPhone section">iPhone</a>
           <a href="#" aria-label="Android section">Android</a>
           <a href="#" aria-label="Help section">Help</a>
-          <a href="#" aria-label="Help section">Company <KeyboardArrowDownIcon/></a>
+          <a href="#" aria-label="Company section">Company</a>
         </div>
         <div className="topbar-auth">
           <button aria-label="Sign in button">Sign in</button>
         </div>
-      </div>
-
-      {/* Navbar for small screens */}
-      <div className="topbar small-screen">
-        <div className="topbar-left">
-          <div className="topbar-logo">
-            <img src={logocerto} alt="Company Logo" />
-          </div>
-          <MenuIcon onClick={toggleDropdown} className="menu-icon" />
+        {/* Menu Icon for small screens */}
+        <div className="menu-icon" onClick={toggleMenu} ref={menuIconRef}>
+          <MenuIcon />
         </div>
-        {dropdownVisible && (
-          <div className="dropdown-menu">
-            <a href="#" aria-label="iPhone section">iPhone</a>
-            <a href="#" aria-label="Android section">Android</a>
-            <a href="#" aria-label="Help section">Help</a>
-            <a href="#" aria-label="Help section">Company <KeyboardArrowDownIcon/></a>
-            <button aria-label="Sign in button" className="dropdown-signin">Sign in</button>
-          </div>
-        )}
       </div>
     </>
   );
