@@ -10,8 +10,8 @@ const Someone = () => {
         <h5 className="someone-subtitle">Find out with Certo</h5>
 
         <div className="button-container">
-          <button className="button button-iphone">Get Certo for iPhone <TrendingFlatIcon/></button>
-          <button className="button button-android">Get Certo for Android</button>
+          <button className=" button-iphone">Get Certo for iPhone <TrendingFlatIcon/></button>
+          <button className="button-android">Get Certo for Android</button>
         </div>
       </div>
     </div>
