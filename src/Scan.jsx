@@ -1,8 +1,8 @@
 import React from 'react';
-import path from './Certoimage/path.svg';
-import svg1 from './Certoimage/svg1.svg';
-import svg2 from './Certoimage/svg2.svg';
-import svg3 from './Certoimage/svg3.svg';
+import path from './CertoImage/path.svg';
+import svg1 from './CertoImage/svg1.svg';
+import svg2 from './CertoImage/svg2.svg';
+import svg3 from './CertoImage/svg3.svg';
 import './Scan.css';
 
 const Scan = () => {
@@ -34,7 +34,7 @@ const Scan = () => {
           </p>
         </div>
 
-        {/* Middle Column */}
+        {/* Middle Column */I
         <div className="scan-middle">
           <h2 className="scan-heading1">Certo</h2>
           <nav className="scan-nav">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Group from './Certoimage/twoperson.png';
+import Group from './CertoImage/twoperson.png';
 
 const Homepage = () => {
   return (

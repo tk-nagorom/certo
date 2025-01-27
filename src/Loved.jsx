@@ -8,13 +8,13 @@ import 'swiper/css/pagination';
 import './Loved.css'; // Custom CSS file
 
 // Import image assets
-import svg from './Certoimage/son.svg';
-import figure1 from './Certoimage/figure1.svg';
-import new1 from './Certoimage/new1.svg';
-import financial3 from './Certoimage/financial3.svg';
-import readers33 from './Certoimage/readers33.svg';
-import zd4 from './Certoimage/zd4.svg';
-import wired66 from './Certoimage/wired66.svg';
+import svg from './CertoImage/son.svg';
+import figure1 from './CertoImage/figure1.svg';
+import new1 from './CertoImage/new1.svg';
+import financial3 from './CertoImage/financial3.svg';
+import readers33 from './CertoImage/readers33.svg';
+import zd4 from './CertoImage/zd4.svg';
+import wired66 from './CertoImage/wired66.svg';
 
 const Loved = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import photo1 from "./Certoimage/photo1.png";
-import photo2 from "./Certoimage/photo2.png";
-import photo3 from "./Certoimage/photo3.png";
+import photo1 from "./CertoImage/photo1.png";
+import photo2 from "./CertoImage/photo2.png";
+import photo3 from "./CertoImage/photo3.png";
 import "./latest.css"; // Import the CSS file
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 

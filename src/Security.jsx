@@ -1,5 +1,5 @@
 import React from 'react';
-import Ado from './Certoimage/Ado.png';
+import Ado from './CertoImage/Ado.png';
 import './Security.css'; // Importing the CSS file
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 

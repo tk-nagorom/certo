@@ -1,11 +1,11 @@
 import React from "react";
 import "./Spyware.css"; // Import the CSS file
-import div1 from "./Certoimage/div1.svg";
-import div2 from "./Certoimage/div2.svg";
-import div3 from "./Certoimage/div3.svg";
-import div4 from "./Certoimage/div4.svg";
-import div5 from "./Certoimage/div5.svg";
-import div6 from "./Certoimage/div6.svg";
+import div1 from "./CertoImage/div1.svg";
+import div2 from "./CertoImage/div2.svg";
+import div3 from "./CertoImage/div3.svg";
+import div4 from "./CertoImage/div4.svg";
+import div5 from "./CertoImage/div5.svg";
+import div6 from "./CertoImage/div6.svg";
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 
 const Spyware = () => {
