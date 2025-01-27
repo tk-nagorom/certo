@@ -1,5 +1,5 @@
 import React from 'react';
-import path from './CertoImage/path.svg';
+import Path from './CertoImage/Path.svg';
 import svg1 from './CertoImage/svg1.svg';
 import svg2 from './CertoImage/svg2.svg';
 import svg3 from './CertoImage/svg3.svg';
@@ -49,7 +49,7 @@ const Scan = () => {
 
         {/* Right Column */}
         <div className="scan-right">
-          <img src={path} alt="Newsletter Illustration" className="scan-newsletter-img" />
+          <img src={Path} alt="Newsletter Illustration" className="scan-newsletter-img" />
           <h2 className="scan-newsletter-heading">Sign up to our newsletter</h2>
           <p className="scan-newsletter-text">
             Receive the latest mobile security news, exclusive <br /> 
