@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import logocerto from './Certoimage/logocerto.svg';
+import logocerto from './Certoimage/certo.svg';
 import './Topbar.css';
 import MenuIcon from '@mui/icons-material/Menu';
 
