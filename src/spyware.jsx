@@ -1,5 +1,5 @@
 import React from "react";
-import "./Spyware.css"; // Import the CSS file
+import "./spyware.css"; // Import the CSS file
 import div1 from "./CertoImage/div1.svg";
 import div2 from "./CertoImage/div2.svg";
 import div3 from "./CertoImage/div3.svg";
