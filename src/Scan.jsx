@@ -3,7 +3,7 @@ import Path from './CertoImage/Path.svg';
 import svg1 from './CertoImage/svg1.svg';
 import svg2 from './CertoImage/svg2.svg';
 import svg3 from './CertoImage/svg3.svg';
-import './Scan.css';
+import './scan.css';
 
 const Scan = () => {
   return (
