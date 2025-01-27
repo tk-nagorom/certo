@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import './Loved.css'; // Custom CSS file
 
 // Import image assets
-import svg from './Certoimage/svg.svg';
+import svg from './Certoimage/son.svg';
 import figure1 from './Certoimage/figure1.svg';
 import new1 from './Certoimage/new1.svg';
 import financial3 from './Certoimage/financial3.svg';
