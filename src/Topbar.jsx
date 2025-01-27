@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import logocerto from './Certoimage/certo.svg';
+import certo from './Certoimage/certo.svg';
 import './Topbar.css';
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -37,7 +37,7 @@ const Topbar = () => {
       {/* Navbar */}
       <div className="topbar">
         <div className="topbar-logo">
-          <img src={logocerto} alt="Company Logo" />
+          <img src={certo} alt="Company Logo" />
         </div>
         {/* Links for large screens */}
         <div className={`topbar-links ${menuOpen ? 'open' : ''}`} ref={menuRef}>
