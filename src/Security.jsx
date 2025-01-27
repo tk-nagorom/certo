@@ -1,5 +1,5 @@
 import React from 'react';
-import AdobeStock from './Certoimage/AdobeStock.png';
+import Ado from './Certoimage/Ado.png';
 import './Security.css'; // Importing the CSS file
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 
@@ -26,7 +26,7 @@ const Security = () => {
       {/* Image Section */}
       <div className="image-section">
   <div className="square"></div>
-  <img src={AdobeStock} alt="Company Logo" className="imagesecurity" />
+  <img src={Ado} alt="Company Logo" className="imagesecurity" />
 </div>
 
     </div>
