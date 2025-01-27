@@ -10,6 +10,7 @@ const Scan = () => {
     <div className="scan-container">
       {/* Top Section */}
       <div className="scan-top">
+
         {/* Left Column */}
         <div className="scan-left">
           <h2 className="scan-heading">Scan. Detect. Remove.</h2>
@@ -28,13 +29,13 @@ const Scan = () => {
           </p>
           <p className="scan-designed">Designed & developed by Bigger Picture</p>
           <p className="scan-disclaimer">
-            Apple, the Apple logo, and iPhone are trademarks of Apple Inc., registered in the U.S. and other<br />
+            Apple, the Apple logo, and iPhone are trademarks of Apple Inc., registered in the U.S. and other <br />
             countries. App Store is a service mark of Apple Inc. Android, Google Play and the Google Play <br />
             logo are trademarks of Google LLC.
           </p>
         </div>
 
-        {/* Middle Column */I
+        {/* Middle Column */}
         <div className="scan-middle">
           <h2 className="scan-heading1">Certo</h2>
           <nav className="scan-nav">
@@ -51,7 +52,8 @@ const Scan = () => {
           <img src={path} alt="Newsletter Illustration" className="scan-newsletter-img" />
           <h2 className="scan-newsletter-heading">Sign up to our newsletter</h2>
           <p className="scan-newsletter-text">
-            Receive the latest mobile security news, exclusive <br /> discounts & offers straight to your inbox
+            Receive the latest mobile security news, exclusive <br /> 
+            discounts & offers straight to your inbox
           </p>
           <div className="scan-newsletter-form">
             <input
@@ -62,6 +64,7 @@ const Scan = () => {
             <button className="scan-button">Submit</button>
           </div>
         </div>
+
       </div>
     </div>
   );
