@@ -26,17 +26,21 @@
     display: flex;
     justify-content: center;
     gap: 16px;
-  }
-  
-  .button {
+    flex-wrap: wrap; /* Allows breaking into a new line when needed */
+}
+
+.button {
     padding: 8px 24px;
     border-radius: 6px; /* Rounded corners */
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .button-iphone {
+    min-width: 200px; /* Ensures consistent button width */
+    text-align: center;
+}
+
+/* iPhone Button */
+.button-iphone {
     background-color: #fbbf24; /* Yellow background */
     color: black;
     border-radius: 20px;
@@ -44,23 +48,33 @@
     cursor: pointer;
     padding: 8px 24px;
     transition: background-color 0.3s ease;
-  }
-  
-  .button-iphone:hover {
+}
+
+.button-iphone:hover {
     background-color: #f59e0b; /* Darker yellow on hover */
-  }
-  
-  .button-android {
-   border: solid 2px white;
-    color: white; /* Blue text */
+}
+
+/* Android Button */
+.button-android {
+    border: solid 2px white;
+    color: white;
+    background-color: transparent;
     border-radius: 20px;
     font-weight: 600;
     cursor: pointer;
     padding: 8px 24px;
     transition: background-color 0.3s ease;
-  }
-  
-  .button-android:hover {
+}
+
+.button-android:hover {
     background-color: #97add9; /* Light gray on hover */
-  }
-  
+}
+
+/* Make buttons stack on smaller screens */
+@media (max-width: 513px) {
+    .button-container {
+        flex-direction: column;
+        gap: 12px; /* Reduce spacing for better mobile layout */
+        align-items: center; /* Center buttons in column mode */
+    }
+}

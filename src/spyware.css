@@ -55,7 +55,6 @@
     font-size: 14px; /* Equivalent to 0.875rem */
     color: #6b7280; /* Light gray */
 }
-
 .spyware-buttons {
     grid-column: 1 / -1; /* Make buttons span the entire grid */
     display: flex;
@@ -65,8 +64,11 @@
     margin-top: 72px;
     margin-bottom: 42px;
     border-radius: 50px;
-  }
-.button-primary {
+    flex-wrap: wrap;
+}
+
+.button-primary, 
+.button-secondary {
     background-color: #facc15; /* Yellow */
     color: black;
     font-weight: 600;
@@ -75,6 +77,9 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: auto;
+    min-width: 200px; /* Ensure buttons are not too small */
+    text-align: center;
 }
 
 .button-primary:hover {
@@ -83,15 +88,16 @@
 
 .button-secondary {
     border: 2px solid #1f2937; /* Dark gray border */
-    color: black; /* Dark gray text */
-    font-weight: 600;
-    padding: 8px 16px; /* 0.5rem 1rem */
-    border-radius: 20px; /* 0.375rem */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: transparent;
 }
 
 .button-secondary:hover {
     background-color: #f3f4f6; /* Light gray hover */
 }
 
+@media (max-width: 513px) {
+    .spyware-buttons {
+        flex-direction: column;
+        gap: 12px; /* Reduce space in mobile */
+    }
+}
